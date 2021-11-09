@@ -37,7 +37,6 @@ namespace WindowsFormsApp5
 
             //UpdateControl(label_status101, SystemColors.Window, connection_status, true);
 
-
         }
 
 
@@ -52,7 +51,7 @@ namespace WindowsFormsApp5
             }
             connection_status2 = "Connection: " + status.ToString() + Environment.NewLine;
 
-            //      Form1._myWindow.UpdateControl(Form1._myWindow.label_status100, SystemColors.Window, connection_status, true);
+            //      UpdateControl(label_status100, SystemColors.Window, connection_status, true);
 
 
         }
@@ -76,7 +75,6 @@ namespace WindowsFormsApp5
             //Interpret the received data object as a string
             strData1 = data as string;
             //Add the received data to a rich text box
-            //  label3.Text = strData + Environment.NewLine;
 
             int b_lenght;
 
@@ -160,7 +158,7 @@ namespace WindowsFormsApp5
             //Interpret the received data object as a string
             strData2 = data2 as string;
             //Add the received data to a rich text box
-            //  label3.Text = strData + Environment.NewLine;
+
             int b_lenght;
 
             switch (Form1.eq)
@@ -192,7 +190,7 @@ namespace WindowsFormsApp5
             if (strData2.Length >= b_lenght)
             {
                 _barcodes_read += strData2;
-                //         modbusClient.WriteSingleRegister(1003, 1);
+                //   modbusClient.WriteSingleRegister(1003, 1);
                 //   wysun_silownik();
                 SplitComparecs.SplitCompare(_barcodes_read);
 
