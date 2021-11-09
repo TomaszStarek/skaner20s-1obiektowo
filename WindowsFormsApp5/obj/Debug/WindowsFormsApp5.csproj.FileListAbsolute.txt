@@ -1,0 +1,202 @@
+C:\Users\2281209\source\repos\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csprojAssemblyReference.cache
+C:\Users\2281209\source\repos\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Form1.resources
+C:\Users\2281209\source\repos\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Properties.Resources.resources
+C:\Users\2281209\source\repos\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.GenerateResource.cache
+C:\Users\2281209\source\repos\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CoreCompileInputs.cache
+C:\Users\2281209\source\repos\WindowsFormsApp5\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe.config
+C:\Users\2281209\source\repos\WindowsFormsApp5\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\source\repos\WindowsFormsApp5\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\source\repos\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\source\repos\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\source\repos\WindowsFormsApp5\WindowsFormsApp5\bin\Debug\EasyModbus.dll
+C:\Users\2281209\source\repos\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CopyComplete
+C:\Users\2281209\Documents\repos\WindowsFormsApp5\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe.config
+C:\Users\2281209\Documents\repos\WindowsFormsApp5\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\Documents\repos\WindowsFormsApp5\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\Documents\repos\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Form1.resources
+C:\Users\2281209\Documents\repos\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Properties.Resources.resources
+C:\Users\2281209\Documents\repos\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.GenerateResource.cache
+C:\Users\2281209\Documents\repos\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CoreCompileInputs.cache
+C:\Users\2281209\Documents\repos\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CopyComplete
+C:\Users\2281209\Documents\repos\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\Documents\repos\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\Documents\repos\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csprojAssemblyReference.cache
+C:\Users\2281209\Desktop\wkertakkrom\WindowsFormsApp5\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe.config
+C:\Users\2281209\Desktop\wkertakkrom\WindowsFormsApp5\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\Desktop\wkertakkrom\WindowsFormsApp5\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\Desktop\wkertakkrom\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csprojAssemblyReference.cache
+C:\Users\2281209\Desktop\wkertakkrom\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Form1.resources
+C:\Users\2281209\Desktop\wkertakkrom\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Properties.Resources.resources
+C:\Users\2281209\Desktop\wkertakkrom\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.GenerateResource.cache
+C:\Users\2281209\Desktop\wkertakkrom\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CoreCompileInputs.cache
+C:\Users\2281209\Desktop\wkertakkrom\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CopyComplete
+C:\Users\2281209\Desktop\wkertakkrom\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\Desktop\wkertakkrom\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\Desktop\wkertakkrom - csv\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csprojAssemblyReference.cache
+C:\Users\2281209\Desktop\wkertakkrom - csv\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Form1.resources
+C:\Users\2281209\Desktop\wkertakkrom - csv\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Properties.Resources.resources
+C:\Users\2281209\Desktop\wkertakkrom - csv\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.GenerateResource.cache
+C:\Users\2281209\Desktop\wkertakkrom - csv\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CoreCompileInputs.cache
+C:\Users\2281209\Desktop\wkertakkrom - csv\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\Desktop\wkertakkrom - csv\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\Desktop\wkertakkrom - csv\WindowsFormsApp5\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe.config
+C:\Users\2281209\Desktop\wkertakkrom - csv\WindowsFormsApp5\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\Desktop\wkertakkrom - csv\WindowsFormsApp5\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\Desktop\wkertakkrom - csv\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CopyComplete
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\05.08csv\WindowsFormsApp5\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe.config
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\05.08csv\WindowsFormsApp5\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\05.08csv\WindowsFormsApp5\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\05.08csv\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Form1.resources
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\05.08csv\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Properties.Resources.resources
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\05.08csv\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.GenerateResource.cache
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\05.08csv\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CoreCompileInputs.cache
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\05.08csv\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\05.08csv\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\05.08csv\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csprojAssemblyReference.cache
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\05.08csv - Copy\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csprojAssemblyReference.cache
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\05.08csv - Copy\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Form1.resources
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\05.08csv - Copy\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Properties.Resources.resources
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\05.08csv - Copy\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.GenerateResource.cache
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\05.08csv - Copy\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CoreCompileInputs.cache
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\05.08csv - Copy\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\05.08csv - Copy\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\05.08csv - Copy\WindowsFormsApp5\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe.config
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\05.08csv - Copy\WindowsFormsApp5\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\05.08csv - Copy\WindowsFormsApp5\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\05.08csv - testtty12.08\WindowsFormsApp5\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe.config
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\05.08csv - testtty12.08\WindowsFormsApp5\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\05.08csv - testtty12.08\WindowsFormsApp5\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\05.08csv - testtty12.08\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csprojAssemblyReference.cache
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\05.08csv - testtty12.08\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Form1.resources
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\05.08csv - testtty12.08\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Properties.Resources.resources
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\05.08csv - testtty12.08\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.GenerateResource.cache
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\05.08csv - testtty12.08\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CoreCompileInputs.cache
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\05.08csv - testtty12.08\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\05.08csv - testtty12.08\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\05.08csv - testtty12.08\dwa porty com\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe.config
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\05.08csv - testtty12.08\dwa porty com\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\05.08csv - testtty12.08\dwa porty com\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\05.08csv - testtty12.08\dwa porty com\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Form1.resources
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\05.08csv - testtty12.08\dwa porty com\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Properties.Resources.resources
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\05.08csv - testtty12.08\dwa porty com\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.GenerateResource.cache
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\05.08csv - testtty12.08\dwa porty com\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CoreCompileInputs.cache
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\05.08csv - testtty12.08\dwa porty com\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\05.08csv - testtty12.08\dwa porty com\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\05.08csv - testtty12.08\dwa porty com\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csprojAssemblyReference.cache
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\dwa porty com z historiaMES\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe.config
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\dwa porty com z historiaMES\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\dwa porty com z historiaMES\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\dwa porty com z historiaMES\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csprojAssemblyReference.cache
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\dwa porty com z historiaMES\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Form1.resources
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\dwa porty com z historiaMES\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Properties.Resources.resources
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\dwa porty com z historiaMES\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.GenerateResource.cache
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\dwa porty com z historiaMES\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CoreCompileInputs.cache
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\dwa porty com z historiaMES\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\dwa porty com z historiaMES\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\button (drugi wkretak)\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csprojAssemblyReference.cache
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\button (drugi wkretak)\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Form1.resources
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\button (drugi wkretak)\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Properties.Resources.resources
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\button (drugi wkretak)\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.GenerateResource.cache
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\button (drugi wkretak)\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CoreCompileInputs.cache
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\button (drugi wkretak)\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\button (drugi wkretak)\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\button (drugi wkretak)\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe.config
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\button (drugi wkretak)\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\button (drugi wkretak)\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\button (drugi wkretak) - historia MES\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe.config
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\button (drugi wkretak) - historia MES\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\button (drugi wkretak) - historia MES\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\button (drugi wkretak) - historia MES\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csprojAssemblyReference.cache
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\button (drugi wkretak) - historia MES\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Form1.resources
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\button (drugi wkretak) - historia MES\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Properties.Resources.resources
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\button (drugi wkretak) - historia MES\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.GenerateResource.cache
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\button (drugi wkretak) - historia MES\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CoreCompileInputs.cache
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\button (drugi wkretak) - historia MES\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\button (drugi wkretak) - historia MES\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\button (drugi wkretak) - historia MES +ICT\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe.config
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\button (drugi wkretak) - historia MES +ICT\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\button (drugi wkretak) - historia MES +ICT\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\button (drugi wkretak) - historia MES +ICT\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.AssemblyReference.cache
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\button (drugi wkretak) - historia MES +ICT\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Form1.resources
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\button (drugi wkretak) - historia MES +ICT\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Properties.Resources.resources
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\button (drugi wkretak) - historia MES +ICT\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.GenerateResource.cache
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\button (drugi wkretak) - historia MES +ICT\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CoreCompileInputs.cache
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\button (drugi wkretak) - historia MES +ICT\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\Desktop\programowanie\wkretak - despol\button (drugi wkretak) - historia MES +ICT\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\Desktop\programowanie\20s-1\button (drugi wkretak) - historia MES +ICT\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe.config
+C:\Users\2281209\Desktop\programowanie\20s-1\button (drugi wkretak) - historia MES +ICT\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\Desktop\programowanie\20s-1\button (drugi wkretak) - historia MES +ICT\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\Desktop\programowanie\20s-1\button (drugi wkretak) - historia MES +ICT\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.AssemblyReference.cache
+C:\Users\2281209\Desktop\programowanie\20s-1\button (drugi wkretak) - historia MES +ICT\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Form1.resources
+C:\Users\2281209\Desktop\programowanie\20s-1\button (drugi wkretak) - historia MES +ICT\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Properties.Resources.resources
+C:\Users\2281209\Desktop\programowanie\20s-1\button (drugi wkretak) - historia MES +ICT\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.GenerateResource.cache
+C:\Users\2281209\Desktop\programowanie\20s-1\button (drugi wkretak) - historia MES +ICT\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CoreCompileInputs.cache
+C:\Users\2281209\Desktop\programowanie\20s-1\button (drugi wkretak) - historia MES +ICT\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\Desktop\programowanie\20s-1\button (drugi wkretak) - historia MES +ICT\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\Desktop\programowanie\20s-1\button (drugi wkretak) - historia MES +ICT\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CopyComplete
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe.config
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.AssemblyReference.cache
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Form1.resources
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Properties.Resources.resources
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.GenerateResource.cache
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CoreCompileInputs.cache
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CopyComplete
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - Copy\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe.config
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - Copy\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - Copy\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - Copy\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.AssemblyReference.cache
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - Copy\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Form1.resources
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - Copy\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Properties.Resources.resources
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - Copy\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.GenerateResource.cache
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - Copy\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CoreCompileInputs.cache
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - Copy\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CopyComplete
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - Copy\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - Copy\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe.config
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.AssemblyReference.cache
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Form1.resources
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Properties.Resources.resources
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.GenerateResource.cache
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CoreCompileInputs.cache
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CopyComplete
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.AssemblyReference.cache
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Form1.resources
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Properties.Resources.resources
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.GenerateResource.cache
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CoreCompileInputs.cache
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe.config
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CopyComplete
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe.config
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.AssemblyReference.cache
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Form1.resources
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Properties.Resources.resources
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.GenerateResource.cache
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CoreCompileInputs.cache
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CopyComplete
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku - dodanie klas\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe.config
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku - dodanie klas\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku - dodanie klas\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku - dodanie klas\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.AssemblyReference.cache
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku - dodanie klas\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Form1.resources
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku - dodanie klas\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Properties.Resources.resources
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku - dodanie klas\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.GenerateResource.cache
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku - dodanie klas\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CoreCompileInputs.cache
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku - dodanie klas\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CopyComplete
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku - dodanie klas\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku - dodanie klas\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.pdb
