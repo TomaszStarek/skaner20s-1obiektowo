@@ -36,9 +36,7 @@ namespace WindowsFormsApp5
 
         public delegate void delDataReceived(EventDrivenTCPClient sender, object data);
 
-
         public event delDataReceived DataReceived;
-
 
         public delegate void delConnectionStatusChanged(EventDrivenTCPClient sender, ConnectionStatus status);
         public event delConnectionStatusChanged ConnectionStatusChanged;

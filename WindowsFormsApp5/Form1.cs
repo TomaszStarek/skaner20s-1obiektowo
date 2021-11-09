@@ -23,27 +23,24 @@ namespace WindowsFormsApp5
     public partial class Form1 : Form
     {
 
-
-//        private static System.Timers.Timer aTimer;               do timera
-
-
-
         //modbus do sterownika
-        ModbusClient modbusClient = new ModbusClient("192.168.100.8", 502);    //Ip-Address and Port of Modbus-TCP-Server
+        public static ModbusClient modbusClient = new ModbusClient("192.168.100.8", 502);    //Ip-Address and Port of Modbus-TCP-Server
 
 
 
         //do skanerow
-        EventDrivenTCPClient client;
-        EventDrivenTCPClient client2;
+        public static EventDrivenTCPClient client;
+        public static EventDrivenTCPClient client2;
 
 
         private readonly object x = new object();
 
+        public static Form1 _myWindow;
 
         public Form1()
         {
             InitializeComponent();
+            _myWindow = this;
 
             radioButton_linky.Checked = false;
             radioButton_smets.Checked = false;
@@ -54,9 +51,11 @@ namespace WindowsFormsApp5
             //Initialize the event driven client
             client = new EventDrivenTCPClient(IPAddress.Parse("192.168.100.101"), int.Parse("9004"));
             //Initialize the events
-            client.DataReceived += new EventDrivenTCPClient.delDataReceived(client_DataReceived);
-            client.ConnectionStatusChanged += new EventDrivenTCPClient.delConnectionStatusChanged(client_ConnectionStatusChanged);
-
+            var scanner1 = new ScannerTcpConnection();
+            client.DataReceived += new EventDrivenTCPClient.delDataReceived(scanner1.client_DataReceived);
+            client.ConnectionStatusChanged += new EventDrivenTCPClient.delConnectionStatusChanged(scanner1.client_ConnectionStatusChanged);
+            UpdateControl(label_status101, SystemColors.Window, scanner1.connection_status, true);
+            UpdateControl(label_b101, SystemColors.Window, scanner1.strData1, true);
             client.Connect();
 
 
@@ -64,9 +63,11 @@ namespace WindowsFormsApp5
             //Initialize the event driven client
             client2 = new EventDrivenTCPClient(IPAddress.Parse("192.168.100.100"), int.Parse("9004"));
             //Initialize the events
-            client2.DataReceived += new EventDrivenTCPClient.delDataReceived(client_DataReceived2);
-            client2.ConnectionStatusChanged += new EventDrivenTCPClient.delConnectionStatusChanged(client_ConnectionStatusChanged2);
-
+            var scanner2 = new ScannerTcpConnection();
+            client2.DataReceived += new EventDrivenTCPClient.delDataReceived(scanner2.client_DataReceived2);
+            client2.ConnectionStatusChanged += new EventDrivenTCPClient.delConnectionStatusChanged(scanner2.client_ConnectionStatusChanged2);
+            UpdateControl(label_status101, SystemColors.Window, scanner2.connection_status2, true);
+            UpdateControl(label_b100, SystemColors.Window, scanner2.strData2, true);
             client2.Connect();
 
 
@@ -83,406 +84,13 @@ namespace WindowsFormsApp5
                 MessageBox.Show("Modbus SocketException: " + ex);
             }
 
-
-            //            SetTimer();   do timerow
-            //            aTimer.Stop();
-
             Application.ApplicationExit += new EventHandler(OnApplicationExit);
 
-
-        }
-
-
-        //Fired when the connection status changes in the TCP client - parsing these messages is up to the developer
-        //I'm just adding the .ToString() of the state enum to a richtextbox here
-        void client_ConnectionStatusChanged(EventDrivenTCPClient sender, EventDrivenTCPClient.ConnectionStatus status)
-        {
-
-            //Check if this event was fired on a different thread, if it is then we must invoke it on the UI thread
-            if (InvokeRequired)
-            {
-                Invoke(new EventDrivenTCPClient.delConnectionStatusChanged(client_ConnectionStatusChanged), sender, status);
-                return;
-            }
-            string connection_status = "Connection: " + status.ToString() + Environment.NewLine;
-
-            UpdateControl(label_status101, SystemColors.Window, connection_status, true);
-
-        }
-
-
-        void client_ConnectionStatusChanged2(EventDrivenTCPClient sender, EventDrivenTCPClient.ConnectionStatus status)
-        {
-
-            //Check if this event was fired on a different thread, if it is then we must invoke it on the UI thread
-            if (InvokeRequired)
-            {
-                Invoke(new EventDrivenTCPClient.delConnectionStatusChanged(client_ConnectionStatusChanged), sender, status);
-                return;
-            }
-            string connection_status = "Connection: " + status.ToString() + Environment.NewLine;
-
-            UpdateControl(label_status100, SystemColors.Window, connection_status, true);
-
-        }
-
-
-        string barcodes_read;
-        //Fired when new data is received in the TCP client
-        void client_DataReceived(EventDrivenTCPClient sender, object data)
-        {
-            //Again, check if this needs to be invoked in the UI thread
-            if (InvokeRequired)
-            {
-                try
-                {
-                    Invoke(new EventDrivenTCPClient.delDataReceived(client_DataReceived), sender, data);
-                }
-                catch
-                { }
-                return;
-            }
-            //Interpret the received data object as a string
-            string strData = data as string;
-            //Add the received data to a rich text box
-            //  label3.Text = strData + Environment.NewLine;
-            
-            int b_lenght;
-
-            switch (eq)
-            {
-                case 4:
-                    b_lenght = 42;
-
-                    break;
-
-                case 3:
-                    b_lenght = 84;
-                    break;
-
-                case 2:
-                    b_lenght = 84;
-                    break;
-                case 1:
-                    b_lenght = 126;
-                    break;
-
-                default:
-                    b_lenght = 0;
-                    MessageBox.Show("Wybierz ponownie produkt!");
-                    break;
-            }
-
-
-            UpdateControl(label_b101, SystemColors.Window, strData, true);
-
-            if (strData.Length >= b_lenght)
-            {
-                barcodes_read = strData;
-                try
-                {
-                    Thread.Sleep(100);
-                    client2.Send("LON\r");
-
-                }
-                catch
-                {
-                    MessageBox.Show("Nie udało się wysłać komendy LON\r", "Błąd skaner 100");
-                }
-            }
-            else if (!strData.Contains("LOAD"))
-            {
-                
-                    try
-                    {
-                        Thread.Sleep(100);
-                        client.Send("LON\r");
-
-
-                }
-                    catch
-                    {
-                        MessageBox.Show("Nie udało się wysłać komendy LON\r", "Błąd skaner 101");
-                    }
-
-               
-            }
-
-        }
-
-
-
-        void client_DataReceived2(EventDrivenTCPClient sender, object data2)
-        {
-
-            //Again, check if this needs to be invoked in the UI thread
-            if (InvokeRequired)
-            {
-                try
-                {
-                    Invoke(new EventDrivenTCPClient.delDataReceived(client_DataReceived), sender, data2);
-                }
-                catch
-                { }
-                return;
-            }
-            //Interpret the received data object as a string
-            string strData2 = data2 as string;
-            //Add the received data to a rich text box
-            //  label3.Text = strData + Environment.NewLine;
-            int b_lenght;
-
-            switch (eq)
-            {
-                case 4:
-                    b_lenght = 42 - 1;
-
-                    break;
-
-                case 3:
-                    b_lenght = 84 - 1;
-                    break;
-
-                case 2:
-                    b_lenght = 84 - 1;
-                    break;
-                case 1:
-                    b_lenght = 126 - 1;
-                    break;
-
-                default:
-                    b_lenght = 0;
-                    MessageBox.Show("Wybierz ponownie produkt!");
-                    break;
-            }
-
-            UpdateControl(label_b100, SystemColors.Window, strData2, true);
-
-            if (strData2.Length >= b_lenght)
-            {
-                barcodes_read += strData2;
-                //         modbusClient.WriteSingleRegister(1003, 1);
-             //   wysun_silownik();
-                split_compare(barcodes_read);
-
-                
-                
-            }
-            else if (!strData2.Contains("LOAD"))
-            {
-                try
-                {
-                    Thread.Sleep(100);
-                    client2.Send("LON\r");
-
-                }
-                catch
-                {
-                    MessageBox.Show("Nie udało się wysłać komendy LON\r", "Błąd skaner 101");
-                }
-            }
-
-
-
-
         }
 
 
 
 
-        private void wysun_silownik()
-        {
-            int modbus_tryb;
-            if (eq == 3 || eq == 4)
-                    modbus_tryb = 1;
-            else
-                modbus_tryb = 2;
-
-            try
-            {
-                modbusClient.WriteSingleRegister(1003, modbus_tryb);
-             //   clear_barkodes();
-
-            }
-            catch
-            {
-                MessageBox.Show("Nie udało się wysłać do sterownika sterowania siłownika", "Błąd");
-            }
-        }
-
-
-        private void split_compare(string to_split)
-        {
-            int b_lenght;
-            int b_count;
-            int n_count = 0;
-
-      //      int modbus_tryb;
-
-
-
-            switch (eq)
-            {
-                case 4:
-                    b_lenght = 20;
-                    b_count = 4;
-                    break;
-
-                case 3:
-                    b_lenght = 27;
-                    b_count = 6;
-                    break;
-
-                case 2:
-                    b_lenght = 20;
-                    b_count = 8;
-                    break;
-                case 1:
-                    b_lenght = 20;
-                    b_count = 12;
-                    break;
-
-                default:
-
-                    b_lenght = 0;
-                    b_count = 0;
-                    MessageBox.Show("Wybierz ponownie produkt!");
-                    break;
-            }
-
-
-            if (b_lenght > 0)
-            {
-                string[] subs = to_split.Split(',');
-  //              MessageBox.Show(subs.Length.ToString());
-
-                string[] bufor = new string[b_count+5];
-
-                foreach (var sub in subs)
-                {
-
-                    if (sub.Length >= b_lenght)
-                    {
-                        if (b_count > n_count)
-                            bufor[n_count] = @sub;
-                        else
-                            MessageBox.Show("Przekroczono miejsce tablicy!", "Błąd");
-                        n_count++;
-
-                        if (b_count == n_count)
-                        {
-                            Thread t = new Thread(wysun_silownik);
-                            t.Start();
-
-                            int counter=0;
-   
-                            foreach (var sub2 in bufor)
-                            {                            
-
-                                counter++;
-    //                            MessageBox.Show($"Substring: {sub2}");
-                               // tworzeniepliku(sub2, eq);
-                                SaveLog.CreateFileLog(sub2, eq);
-                                     show_barkodes(sub2,counter);
-                          //      Thread.Sleep(75);
-
-                           //     Task.Run(() => show_barkodes(sub2, counter));
-
-                             //
-                             //Thread.Sleep(75);
-
-                                switch (eq)
-                                {
-                                    case 4:
-                                        if(counter >= 4)
-                                        {
-                                            // Thread.Sleep(1000);
-                                            Task.Run(() => clear_barkodes());
-                                        }
-                                        break;
-
-                                    case 3:
-                                        if (counter >= 6)
-                                        {
-                                            // Thread.Sleep(1000);
-                                            Task.Run(() => clear_barkodes());
-                                        }
-                                        break;
-                                    case 2:
-                                        if (counter >= 8)
-                                        {
-                                            //  Thread.Sleep(1000);
-                                            Task.Run(() => clear_barkodes());
-                                        }
-                                        break;
-                                    case 1:
-                                        if (counter >= 12)
-                                        {
-                                            //  Thread.Sleep(1000);
-                                            Task.Run(() => clear_barkodes());
-                                        }
-
-                                            
-                                        break;
-                                    default:
-                                        
-                                        break;
-                                }
-                            }
-
-
-
-
-                            //if (eq == 3)
-                            //    modbus_tryb = 1;
-                            //else
-                            //    modbus_tryb = 2;
-
-                            //try
-                            //{
-                            //    modbusClient.WriteSingleRegister(1003, modbus_tryb);
-                            //    clear_barkodes();
-
-                            //}
-                            //catch
-                            //{
-                            //    MessageBox.Show("Nie udało się wysłać do sterownika sterowania siłownika", "Błąd");
-                            //}
-
-
-
-                        }
-                        else
-                        {
-                        }
-                    }
-
-                }
-
-                if (b_count > n_count)
-                {
-                    try
-                    {
-                        Thread.Sleep(100);
-                        client.Send("LON\r");
-
-                    }
-                    catch
-                    {
-                        MessageBox.Show("Nie udało się wysłać komendy LON\r", "Błąd");
-                    }
-                }
-
-
-            }
-
-
-
-        }
-
-
-        // this is called when the serial port has receive-data for us.
- 
         public bool ControlInvokeRequired(Control c, Action a)
         {
             if (c.InvokeRequired) c.Invoke(new MethodInvoker(delegate { a(); }));
@@ -518,7 +126,7 @@ namespace WindowsFormsApp5
         }
 
 
-        private void clear_barkodes()
+        public void clear_barkodes()
         {
             //  Thread.Sleep(1000);
 
@@ -528,10 +136,6 @@ namespace WindowsFormsApp5
                 // Executes the following code on the GUI thread.
                 this.BackColor = SystemColors.ScrollBar;
             }));
-
-
-
-           
 
             if (eq == 4)
             {
@@ -582,7 +186,7 @@ namespace WindowsFormsApp5
 
 
 
-            private void show_barkodes(string barkode, int n_barkode)
+        public void show_barkodes(string barkode, int n_barkode)
         {
 
             lock (x)
@@ -880,14 +484,13 @@ namespace WindowsFormsApp5
 
 
 
-            int eq;
+        public static int eq;
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
 
             if (((RadioButton)sender).Checked == true)
             {
-                //  aTimer.Start();
                 UpdateControl(label_aktualny_produkt, SystemColors.Window, ((RadioButton)sender).Text, true);
             }
 
@@ -901,10 +504,7 @@ namespace WindowsFormsApp5
                 {
                     MessageBox.Show("Nie udało się wysłać do streownika info o trybie", "Błąd");
                 }
-                //               aTimer.Stop();
-                //                string tcp_response;
-                //               tcp_response = Connect(101, 9004, "BLOAD,4\r");
-                //              tcp_response = Connect(100, 9004, "BLOAD,4\r");
+
                 try
                 {
                     client.Send("BLOAD,4\r");
@@ -917,7 +517,6 @@ namespace WindowsFormsApp5
                 eq = 4;
 
                 show_controls(4);
-                //               UpdateControl(label_tcp_connection, SystemColors.Window, tcp_response, true);
 
             }
             else if (radioButton_smets.Checked)
@@ -1043,7 +642,6 @@ namespace WindowsFormsApp5
                 modbusClient.WriteSingleRegister(1002, 2);
                 modbusClient.WriteSingleRegister(1003, 2);
             }
-            //UpdateControl(modbus_test_label, SystemColors.Window,  modbusClient.ReadCoils(1, 1).ToString(), true);
 
         }
 
