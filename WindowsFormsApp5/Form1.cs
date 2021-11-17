@@ -37,15 +37,17 @@ namespace WindowsFormsApp5
 
         public static Form1 _myWindow;
 
+        public static string lotNumber;
+
         public Form1()
         {
             InitializeComponent();
             _myWindow = this;
 
-            radioButton_linky.Checked = false;
-            radioButton_smets.Checked = false;
-            radioButton_cyble8.Checked = false;
-            radioButton_cyble12.Checked = false;
+            radioButtonLinky.Checked = false;
+            radioButtonSmets.Checked = false;
+            radioButtonCyble8.Checked = false;
+            radioButtonCyble12.Checked = false;
 
 
             //Initialize the event driven client
@@ -54,10 +56,8 @@ namespace WindowsFormsApp5
             var scanner1 = new ScannerTcpConnection();
             client.DataReceived += new EventDrivenTCPClient.delDataReceived(scanner1.client_DataReceived);
             client.ConnectionStatusChanged += new EventDrivenTCPClient.delConnectionStatusChanged(scanner1.client_ConnectionStatusChanged);
-            UpdateControl(label_status101, SystemColors.Window, scanner1.connection_status, true);
-            UpdateControl(label_b101, SystemColors.Window, scanner1.strData1, true);
             client.Connect();
-
+            //UpdateControl(labelBufor101, SystemColors.Window, scanner1.strData1, true);
 
 
             //Initialize the event driven client
@@ -66,9 +66,9 @@ namespace WindowsFormsApp5
             var scanner2 = new ScannerTcpConnection();
             client2.DataReceived += new EventDrivenTCPClient.delDataReceived(scanner2.client_DataReceived2);
             client2.ConnectionStatusChanged += new EventDrivenTCPClient.delConnectionStatusChanged(scanner2.client_ConnectionStatusChanged2);
-            UpdateControl(label_status101, SystemColors.Window, scanner2.connection_status2, true);
-            UpdateControl(label_b100, SystemColors.Window, scanner2.strData2, true);
             client2.Connect();
+            //UpdateControl(labelBufor100, SystemColors.Window, scanner2.strData2, true);
+            
 
 
             try
@@ -139,45 +139,45 @@ namespace WindowsFormsApp5
 
             if (eq == 4)
             {
-                UpdateControl(label_barkod1, SystemColors.ScrollBar, "", true);
-                UpdateControl(label_barkod2, SystemColors.ScrollBar, "", true);
-                UpdateControl(label_barkod7, SystemColors.ScrollBar, "", true);
-                UpdateControl(label_barkod8, SystemColors.ScrollBar, "", true);
+                UpdateControl(labelBarcode1, SystemColors.ScrollBar, "", true);
+                UpdateControl(labelBarcode2, SystemColors.ScrollBar, "", true);
+                UpdateControl(labelBarcode7, SystemColors.ScrollBar, "", true);
+                UpdateControl(labelBarcode8, SystemColors.ScrollBar, "", true);
             }
             else if (eq == 3)
             {
-                UpdateControl(label_barkod1, SystemColors.ScrollBar, "", true);
-                UpdateControl(label_barkod2, SystemColors.ScrollBar, "", true);
-                UpdateControl(label_barkod3, SystemColors.ScrollBar, "", true);
-                UpdateControl(label_barkod7, SystemColors.ScrollBar, "", true);
-                UpdateControl(label_barkod8, SystemColors.ScrollBar, "", true);
-                UpdateControl(label_barkod9, SystemColors.ScrollBar, "", true);
+                UpdateControl(labelBarcode1, SystemColors.ScrollBar, "", true);
+                UpdateControl(labelBarcode2, SystemColors.ScrollBar, "", true);
+                UpdateControl(labelBarcode3, SystemColors.ScrollBar, "", true);
+                UpdateControl(labelBarcode7, SystemColors.ScrollBar, "", true);
+                UpdateControl(labelBarcode8, SystemColors.ScrollBar, "", true);
+                UpdateControl(labelBarcode9, SystemColors.ScrollBar, "", true);
             }
             else if (eq == 2)
             {
-                UpdateControl(label_barkod1, SystemColors.ScrollBar, "", true);
-                UpdateControl(label_barkod2, SystemColors.ScrollBar, "", true);
-                UpdateControl(label_barkod3, SystemColors.ScrollBar, "", true);
-                UpdateControl(label_barkod4, SystemColors.ScrollBar, "", true);
-                UpdateControl(label_barkod7, SystemColors.ScrollBar, "", true);
-                UpdateControl(label_barkod8, SystemColors.ScrollBar, "", true);
-                UpdateControl(label_barkod9, SystemColors.ScrollBar, "", true);
-                UpdateControl(label_barkod10, SystemColors.ScrollBar, "", true);
+                UpdateControl(labelBarcode1, SystemColors.ScrollBar, "", true);
+                UpdateControl(labelBarcode2, SystemColors.ScrollBar, "", true);
+                UpdateControl(labelBarcode3, SystemColors.ScrollBar, "", true);
+                UpdateControl(labelBarcode4, SystemColors.ScrollBar, "", true);
+                UpdateControl(labelBarcode7, SystemColors.ScrollBar, "", true);
+                UpdateControl(labelBarcode8, SystemColors.ScrollBar, "", true);
+                UpdateControl(labelBarcode9, SystemColors.ScrollBar, "", true);
+                UpdateControl(labelBarcode10, SystemColors.ScrollBar, "", true);
             }
             else if (eq == 1)
             {
-                UpdateControl(label_barkod1, SystemColors.ScrollBar, "", true);
-                UpdateControl(label_barkod2, SystemColors.ScrollBar, "", true);
-                UpdateControl(label_barkod3, SystemColors.ScrollBar, "", true);
-                UpdateControl(label_barkod4, SystemColors.ScrollBar, "", true);
-                UpdateControl(label_barkod5, SystemColors.ScrollBar, "", true);
-                UpdateControl(label_barkod6, SystemColors.ScrollBar, "", true);
-                UpdateControl(label_barkod7, SystemColors.ScrollBar, "", true);
-                UpdateControl(label_barkod8, SystemColors.ScrollBar, "", true);
-                UpdateControl(label_barkod9, SystemColors.ScrollBar, "", true);
-                UpdateControl(label_barkod10, SystemColors.ScrollBar, "", true);
-                UpdateControl(label_barkod11, SystemColors.ScrollBar, "", true);
-                UpdateControl(label_barkod12, SystemColors.ScrollBar, "", true);
+                UpdateControl(labelBarcode1, SystemColors.ScrollBar, "", true);
+                UpdateControl(labelBarcode2, SystemColors.ScrollBar, "", true);
+                UpdateControl(labelBarcode3, SystemColors.ScrollBar, "", true);
+                UpdateControl(labelBarcode4, SystemColors.ScrollBar, "", true);
+                UpdateControl(labelBarcode5, SystemColors.ScrollBar, "", true);
+                UpdateControl(labelBarcode6, SystemColors.ScrollBar, "", true);
+                UpdateControl(labelBarcode7, SystemColors.ScrollBar, "", true);
+                UpdateControl(labelBarcode8, SystemColors.ScrollBar, "", true);
+                UpdateControl(labelBarcode9, SystemColors.ScrollBar, "", true);
+                UpdateControl(labelBarcode10, SystemColors.ScrollBar, "", true);
+                UpdateControl(labelBarcode11, SystemColors.ScrollBar, "", true);
+                UpdateControl(labelBarcode12, SystemColors.ScrollBar, "", true);
             }
 
 
@@ -198,17 +198,17 @@ namespace WindowsFormsApp5
                     switch (n_barkode)
                     {
                         case 1:
-                            UpdateControl(label_barkod1, Color.PaleGreen, barkode, true);
+                            UpdateControl(labelBarcode1, Color.PaleGreen, barkode, true);
                             break;
 
                         case 2:
-                            UpdateControl(label_barkod2, Color.PaleGreen, barkode, true);
+                            UpdateControl(labelBarcode2, Color.PaleGreen, barkode, true);
                             break;
                         case 3:
-                            UpdateControl(label_barkod7, Color.PaleGreen, barkode, true);
+                            UpdateControl(labelBarcode7, Color.PaleGreen, barkode, true);
                             break;
                         case 4:
-                            UpdateControl(label_barkod8, Color.PaleGreen, barkode, true);
+                            UpdateControl(labelBarcode8, Color.PaleGreen, barkode, true);
                             this.Invoke(new MethodInvoker(delegate
                             {
                                 // Executes the following code on the GUI thread.
@@ -225,23 +225,23 @@ namespace WindowsFormsApp5
                     switch (n_barkode)
                     {
                         case 1:
-                            UpdateControl(label_barkod1, Color.PaleGreen, barkode, true);
+                            UpdateControl(labelBarcode1, Color.PaleGreen, barkode, true);
                             break;
 
                         case 2:
-                            UpdateControl(label_barkod2, Color.PaleGreen, barkode, true);
+                            UpdateControl(labelBarcode2, Color.PaleGreen, barkode, true);
                             break;
                         case 3:
-                            UpdateControl(label_barkod3, Color.PaleGreen, barkode, true);
+                            UpdateControl(labelBarcode3, Color.PaleGreen, barkode, true);
                             break;
                         case 4:
-                            UpdateControl(label_barkod7, Color.PaleGreen, barkode, true);
+                            UpdateControl(labelBarcode7, Color.PaleGreen, barkode, true);
                             break;
                         case 5:
-                            UpdateControl(label_barkod8, Color.PaleGreen, barkode, true);
+                            UpdateControl(labelBarcode8, Color.PaleGreen, barkode, true);
                             break;
                         case 6:
-                            UpdateControl(label_barkod9, Color.PaleGreen, barkode, true);
+                            UpdateControl(labelBarcode9, Color.PaleGreen, barkode, true);
                             this.Invoke(new MethodInvoker(delegate
                             {
                                 // Executes the following code on the GUI thread.
@@ -258,29 +258,29 @@ namespace WindowsFormsApp5
                     switch (n_barkode)
                     {
                         case 1:
-                            UpdateControl(label_barkod1, Color.PaleGreen, barkode, true);
+                            UpdateControl(labelBarcode1, Color.PaleGreen, barkode, true);
                             break;
 
                         case 2:
-                            UpdateControl(label_barkod2, Color.PaleGreen, barkode, true);
+                            UpdateControl(labelBarcode2, Color.PaleGreen, barkode, true);
                             break;
                         case 3:
-                            UpdateControl(label_barkod3, Color.PaleGreen, barkode, true);
+                            UpdateControl(labelBarcode3, Color.PaleGreen, barkode, true);
                             break;
                         case 4:
-                            UpdateControl(label_barkod4, Color.PaleGreen, barkode, true);
+                            UpdateControl(labelBarcode4, Color.PaleGreen, barkode, true);
                             break;
                         case 5:
-                            UpdateControl(label_barkod7, Color.PaleGreen, barkode, true);
+                            UpdateControl(labelBarcode7, Color.PaleGreen, barkode, true);
                             break;
                         case 6:
-                            UpdateControl(label_barkod8, Color.PaleGreen, barkode, true);
+                            UpdateControl(labelBarcode8, Color.PaleGreen, barkode, true);
                             break;
                         case 7:
-                            UpdateControl(label_barkod9, Color.PaleGreen, barkode, true);
+                            UpdateControl(labelBarcode9, Color.PaleGreen, barkode, true);
                             break;
                         case 8:
-                            UpdateControl(label_barkod10, Color.PaleGreen, barkode, true);
+                            UpdateControl(labelBarcode10, Color.PaleGreen, barkode, true);
                             this.Invoke(new MethodInvoker(delegate
                             {
                                 // Executes the following code on the GUI thread.
@@ -297,41 +297,41 @@ namespace WindowsFormsApp5
                     switch (n_barkode)
                     {
                         case 1:
-                            UpdateControl(label_barkod1, Color.PaleGreen, barkode, true);
+                            UpdateControl(labelBarcode1, Color.PaleGreen, barkode, true);
                             break;
 
                         case 2:
-                            UpdateControl(label_barkod2, Color.PaleGreen, barkode, true);
+                            UpdateControl(labelBarcode2, Color.PaleGreen, barkode, true);
                             break;
                         case 3:
-                            UpdateControl(label_barkod3, Color.PaleGreen, barkode, true);
+                            UpdateControl(labelBarcode3, Color.PaleGreen, barkode, true);
                             break;
                         case 4:
-                            UpdateControl(label_barkod4, Color.PaleGreen, barkode, true);
+                            UpdateControl(labelBarcode4, Color.PaleGreen, barkode, true);
                             break;
                         case 5:
-                            UpdateControl(label_barkod5, Color.PaleGreen, barkode, true);
+                            UpdateControl(labelBarcode5, Color.PaleGreen, barkode, true);
                             break;
                         case 6:
-                            UpdateControl(label_barkod6, Color.PaleGreen, barkode, true);
+                            UpdateControl(labelBarcode6, Color.PaleGreen, barkode, true);
                             break;
                         case 7:
-                            UpdateControl(label_barkod7, Color.PaleGreen, barkode, true);
+                            UpdateControl(labelBarcode7, Color.PaleGreen, barkode, true);
                             break;
                         case 8:
-                            UpdateControl(label_barkod8, Color.PaleGreen, barkode, true);
+                            UpdateControl(labelBarcode8, Color.PaleGreen, barkode, true);
                             break;
                         case 9:
-                            UpdateControl(label_barkod9, Color.PaleGreen, barkode, true);
+                            UpdateControl(labelBarcode9, Color.PaleGreen, barkode, true);
                             break;
                         case 10:
-                            UpdateControl(label_barkod10, Color.PaleGreen, barkode, true);
+                            UpdateControl(labelBarcode10, Color.PaleGreen, barkode, true);
                             break;
                         case 11:
-                            UpdateControl(label_barkod11, Color.PaleGreen, barkode, true);
+                            UpdateControl(labelBarcode11, Color.PaleGreen, barkode, true);
                             break;
                         case 12:
-                            UpdateControl(label_barkod12, Color.PaleGreen, barkode, true);
+                            UpdateControl(labelBarcode12, Color.PaleGreen, barkode, true);
                             this.Invoke(new MethodInvoker(delegate
                             {
                                 // Executes the following code on the GUI thread.
@@ -353,127 +353,127 @@ namespace WindowsFormsApp5
         {
             if (c_count == 4)
             {
-                UpdateControl(label_ozn1, SystemColors.Control, "Barkod1:", true);
-                UpdateControl(label_ozn2, SystemColors.Control, "Barkod2:", true);
-                UpdateControl(label_ozn7, SystemColors.Control, "Barkod3:", true);
-                UpdateControl(label_ozn8, SystemColors.Control, "Barkod4:", true);
+                UpdateControl(labelDescription1, SystemColors.Control, "Barkod1:", true);
+                UpdateControl(labelDescription2, SystemColors.Control, "Barkod2:", true);
+                UpdateControl(labelDescription7, SystemColors.Control, "Barkod3:", true);
+                UpdateControl(labelDescription8, SystemColors.Control, "Barkod4:", true);
 
-                UpdateControl(label_barkod1, SystemColors.ScrollBar, "Barkod1:", true);
-                UpdateControl(label_barkod2, SystemColors.ScrollBar, "Barkod2:", true);
-                UpdateControl(label_barkod7, SystemColors.ScrollBar, "Barkod3:", true);
-                UpdateControl(label_barkod8, SystemColors.ScrollBar, "Barkod4:", true);
+                UpdateControl(labelBarcode1, SystemColors.ScrollBar, "Barkod1:", true);
+                UpdateControl(labelBarcode2, SystemColors.ScrollBar, "Barkod2:", true);
+                UpdateControl(labelBarcode7, SystemColors.ScrollBar, "Barkod3:", true);
+                UpdateControl(labelBarcode8, SystemColors.ScrollBar, "Barkod4:", true);
 
-                UpdateControl(label_ozn3, SystemColors.Control, "Barkod3:", false);
-                UpdateControl(label_ozn4, SystemColors.Control, "Barkod4:", false);
-                UpdateControl(label_ozn5, SystemColors.Control, "Barkod5:", false);
-                UpdateControl(label_ozn6, SystemColors.Control, "Barkod6:", false);
-                UpdateControl(label_ozn9, SystemColors.Control, "Barkod9:", false);
-                UpdateControl(label_ozn10, SystemColors.Control, "Barkod10:", false);
-                UpdateControl(label_ozn11, SystemColors.Control, "Barkod11:", false);
-                UpdateControl(label_ozn12, SystemColors.Control, "Barkod12:", false);
+                UpdateControl(labelDescription3, SystemColors.Control, "Barkod3:", false);
+                UpdateControl(labelDescription4, SystemColors.Control, "Barkod4:", false);
+                UpdateControl(labelDescription5, SystemColors.Control, "Barkod5:", false);
+                UpdateControl(labelDescription6, SystemColors.Control, "Barkod6:", false);
+                UpdateControl(labelDescription9, SystemColors.Control, "Barkod9:", false);
+                UpdateControl(labelDescription10, SystemColors.Control, "Barkod10:", false);
+                UpdateControl(labelDescription11, SystemColors.Control, "Barkod11:", false);
+                UpdateControl(labelDescription12, SystemColors.Control, "Barkod12:", false);
 
-                UpdateControl(label_barkod3, SystemColors.Control, "Barkod3:", false);
-                UpdateControl(label_barkod4, SystemColors.Control, "Barkod4:", false);
-                UpdateControl(label_barkod5, SystemColors.Control, "Barkod5:", false);
-                UpdateControl(label_barkod6, SystemColors.Control, "Barkod6:", false);
-                UpdateControl(label_barkod9, SystemColors.Control, "Barkod9:", false);
-                UpdateControl(label_barkod10, SystemColors.Control, "Barkod10:", false);
-                UpdateControl(label_barkod11, SystemColors.Control, "Barkod11:", false);
-                UpdateControl(label_barkod12, SystemColors.Control, "Barkod12:", false);
+                UpdateControl(labelBarcode3, SystemColors.Control, "Barkod3:", false);
+                UpdateControl(labelBarcode4, SystemColors.Control, "Barkod4:", false);
+                UpdateControl(labelBarcode5, SystemColors.Control, "Barkod5:", false);
+                UpdateControl(labelBarcode6, SystemColors.Control, "Barkod6:", false);
+                UpdateControl(labelBarcode9, SystemColors.Control, "Barkod9:", false);
+                UpdateControl(labelBarcode10, SystemColors.Control, "Barkod10:", false);
+                UpdateControl(labelBarcode11, SystemColors.Control, "Barkod11:", false);
+                UpdateControl(labelBarcode12, SystemColors.Control, "Barkod12:", false);
             }
             else if (c_count == 6)
             {
-                UpdateControl(label_ozn1, SystemColors.Control, "Barkod1:", true);
-                UpdateControl(label_ozn2, SystemColors.Control, "Barkod2:", true);
-                UpdateControl(label_ozn3, SystemColors.Control, "Barkod3:", true);
-                UpdateControl(label_ozn7, SystemColors.Control, "Barkod4:", true);
-                UpdateControl(label_ozn8, SystemColors.Control, "Barkod5:", true);
-                UpdateControl(label_ozn9, SystemColors.Control, "Barkod6:", true);
+                UpdateControl(labelDescription1, SystemColors.Control, "Barkod1:", true);
+                UpdateControl(labelDescription2, SystemColors.Control, "Barkod2:", true);
+                UpdateControl(labelDescription3, SystemColors.Control, "Barkod3:", true);
+                UpdateControl(labelDescription7, SystemColors.Control, "Barkod4:", true);
+                UpdateControl(labelDescription8, SystemColors.Control, "Barkod5:", true);
+                UpdateControl(labelDescription9, SystemColors.Control, "Barkod6:", true);
 
-                UpdateControl(label_barkod1, SystemColors.ScrollBar, "Barkod1:", true);
-                UpdateControl(label_barkod2, SystemColors.ScrollBar, "Barkod2:", true);
-                UpdateControl(label_barkod3, SystemColors.ScrollBar, "Barkod3:", true);
-                UpdateControl(label_barkod7, SystemColors.ScrollBar, "Barkod4:", true);
-                UpdateControl(label_barkod8, SystemColors.ScrollBar, "Barkod5:", true);
-                UpdateControl(label_barkod9, SystemColors.ScrollBar, "Barkod6:", true);
+                UpdateControl(labelBarcode1, SystemColors.ScrollBar, "Barkod1:", true);
+                UpdateControl(labelBarcode2, SystemColors.ScrollBar, "Barkod2:", true);
+                UpdateControl(labelBarcode3, SystemColors.ScrollBar, "Barkod3:", true);
+                UpdateControl(labelBarcode7, SystemColors.ScrollBar, "Barkod4:", true);
+                UpdateControl(labelBarcode8, SystemColors.ScrollBar, "Barkod5:", true);
+                UpdateControl(labelBarcode9, SystemColors.ScrollBar, "Barkod6:", true);
 
-                UpdateControl(label_ozn4, SystemColors.Control, "Barkod4:", false);
-                UpdateControl(label_ozn5, SystemColors.Control, "Barkod5:", false);
-                UpdateControl(label_ozn6, SystemColors.Control, "Barkod6:", false);
-                UpdateControl(label_ozn10, SystemColors.Control, "Barkod10:", false);
-                UpdateControl(label_ozn11, SystemColors.Control, "Barkod11:", false);
-                UpdateControl(label_ozn12, SystemColors.Control, "Barkod12:", false);
+                UpdateControl(labelDescription4, SystemColors.Control, "Barkod4:", false);
+                UpdateControl(labelDescription5, SystemColors.Control, "Barkod5:", false);
+                UpdateControl(labelDescription6, SystemColors.Control, "Barkod6:", false);
+                UpdateControl(labelDescription10, SystemColors.Control, "Barkod10:", false);
+                UpdateControl(labelDescription11, SystemColors.Control, "Barkod11:", false);
+                UpdateControl(labelDescription12, SystemColors.Control, "Barkod12:", false);
 
-                UpdateControl(label_barkod4, SystemColors.Control, "Barkod4:", false);
-                UpdateControl(label_barkod5, SystemColors.Control, "Barkod5:", false);
-                UpdateControl(label_barkod6, SystemColors.Control, "Barkod6:", false);
-                UpdateControl(label_barkod10, SystemColors.Control, "Barkod10:", false);
-                UpdateControl(label_barkod11, SystemColors.Control, "Barkod11:", false);
-                UpdateControl(label_barkod12, SystemColors.Control, "Barkod12:", false);
+                UpdateControl(labelBarcode4, SystemColors.Control, "Barkod4:", false);
+                UpdateControl(labelBarcode5, SystemColors.Control, "Barkod5:", false);
+                UpdateControl(labelBarcode6, SystemColors.Control, "Barkod6:", false);
+                UpdateControl(labelBarcode10, SystemColors.Control, "Barkod10:", false);
+                UpdateControl(labelBarcode11, SystemColors.Control, "Barkod11:", false);
+                UpdateControl(labelBarcode12, SystemColors.Control, "Barkod12:", false);
 
 
             }
             else if (c_count == 8)
             {
-                UpdateControl(label_ozn1, SystemColors.Control, "Barkod1:", true);
-                UpdateControl(label_ozn2, SystemColors.Control, "Barkod2:", true);
-                UpdateControl(label_ozn3, SystemColors.Control, "Barkod3:", true);
-                UpdateControl(label_ozn4, SystemColors.Control, "Barkod4:", true);
-                UpdateControl(label_ozn7, SystemColors.Control, "Barkod5:", true);
-                UpdateControl(label_ozn8, SystemColors.Control, "Barkod6:", true);
-                UpdateControl(label_ozn9, SystemColors.Control, "Barkod7:", true);
-                UpdateControl(label_ozn10, SystemColors.Control, "Barkod8:", true);
+                UpdateControl(labelDescription1, SystemColors.Control, "Barkod1:", true);
+                UpdateControl(labelDescription2, SystemColors.Control, "Barkod2:", true);
+                UpdateControl(labelDescription3, SystemColors.Control, "Barkod3:", true);
+                UpdateControl(labelDescription4, SystemColors.Control, "Barkod4:", true);
+                UpdateControl(labelDescription7, SystemColors.Control, "Barkod5:", true);
+                UpdateControl(labelDescription8, SystemColors.Control, "Barkod6:", true);
+                UpdateControl(labelDescription9, SystemColors.Control, "Barkod7:", true);
+                UpdateControl(labelDescription10, SystemColors.Control, "Barkod8:", true);
 
-                UpdateControl(label_barkod1, SystemColors.ScrollBar, "Barkod1:", true);
-                UpdateControl(label_barkod2, SystemColors.ScrollBar, "Barkod2:", true);
-                UpdateControl(label_barkod3, SystemColors.ScrollBar, "Barkod3:", true);
-                UpdateControl(label_barkod4, SystemColors.ScrollBar, "Barkod4:", true);
-                UpdateControl(label_barkod7, SystemColors.ScrollBar, "Barkod5:", true);
-                UpdateControl(label_barkod8, SystemColors.ScrollBar, "Barkod6:", true);
-                UpdateControl(label_barkod9, SystemColors.ScrollBar, "Barkod7:", true);
-                UpdateControl(label_barkod10, SystemColors.ScrollBar, "Barkod8:", true);
+                UpdateControl(labelBarcode1, SystemColors.ScrollBar, "Barkod1:", true);
+                UpdateControl(labelBarcode2, SystemColors.ScrollBar, "Barkod2:", true);
+                UpdateControl(labelBarcode3, SystemColors.ScrollBar, "Barkod3:", true);
+                UpdateControl(labelBarcode4, SystemColors.ScrollBar, "Barkod4:", true);
+                UpdateControl(labelBarcode7, SystemColors.ScrollBar, "Barkod5:", true);
+                UpdateControl(labelBarcode8, SystemColors.ScrollBar, "Barkod6:", true);
+                UpdateControl(labelBarcode9, SystemColors.ScrollBar, "Barkod7:", true);
+                UpdateControl(labelBarcode10, SystemColors.ScrollBar, "Barkod8:", true);
 
 
-                UpdateControl(label_ozn5, SystemColors.Control, "Barkod5:", false);
-                UpdateControl(label_ozn6, SystemColors.Control, "Barkod6:", false);
-                UpdateControl(label_ozn11, SystemColors.Control, "Barkod11:", false);
-                UpdateControl(label_ozn12, SystemColors.Control, "Barkod12:", false);
+                UpdateControl(labelDescription5, SystemColors.Control, "Barkod5:", false);
+                UpdateControl(labelDescription6, SystemColors.Control, "Barkod6:", false);
+                UpdateControl(labelDescription11, SystemColors.Control, "Barkod11:", false);
+                UpdateControl(labelDescription12, SystemColors.Control, "Barkod12:", false);
 
                 
-                UpdateControl(label_barkod5, SystemColors.Control, "Barkod5:", false);
-                UpdateControl(label_barkod6, SystemColors.Control, "Barkod6:", false);
-                UpdateControl(label_barkod11, SystemColors.Control, "Barkod11:", false);
-                UpdateControl(label_barkod12, SystemColors.Control, "Barkod12:", false);
+                UpdateControl(labelBarcode5, SystemColors.Control, "Barkod5:", false);
+                UpdateControl(labelBarcode6, SystemColors.Control, "Barkod6:", false);
+                UpdateControl(labelBarcode11, SystemColors.Control, "Barkod11:", false);
+                UpdateControl(labelBarcode12, SystemColors.Control, "Barkod12:", false);
 
 
             }
             else if (c_count == 12)
             {
-                UpdateControl(label_ozn1, SystemColors.Control, "Barkod1:", true);
-                UpdateControl(label_ozn2, SystemColors.Control, "Barkod2:", true);
-                UpdateControl(label_ozn3, SystemColors.Control, "Barkod3:", true);
-                UpdateControl(label_ozn4, SystemColors.Control, "Barkod4:", true);
-                UpdateControl(label_ozn5, SystemColors.Control, "Barkod5:", true);
-                UpdateControl(label_ozn6, SystemColors.Control, "Barkod6:", true);
-                UpdateControl(label_ozn7, SystemColors.Control, "Barkod7:", true);
-                UpdateControl(label_ozn8, SystemColors.Control, "Barkod8:", true);
-                UpdateControl(label_ozn9, SystemColors.Control, "Barkod9:", true);
-                UpdateControl(label_ozn10, SystemColors.Control, "Barkod10:", true);
-                UpdateControl(label_ozn11, SystemColors.Control, "Barkod11:", true);
-                UpdateControl(label_ozn12, SystemColors.Control, "Barkod12:", true);
+                UpdateControl(labelDescription1, SystemColors.Control, "Barkod1:", true);
+                UpdateControl(labelDescription2, SystemColors.Control, "Barkod2:", true);
+                UpdateControl(labelDescription3, SystemColors.Control, "Barkod3:", true);
+                UpdateControl(labelDescription4, SystemColors.Control, "Barkod4:", true);
+                UpdateControl(labelDescription5, SystemColors.Control, "Barkod5:", true);
+                UpdateControl(labelDescription6, SystemColors.Control, "Barkod6:", true);
+                UpdateControl(labelDescription7, SystemColors.Control, "Barkod7:", true);
+                UpdateControl(labelDescription8, SystemColors.Control, "Barkod8:", true);
+                UpdateControl(labelDescription9, SystemColors.Control, "Barkod9:", true);
+                UpdateControl(labelDescription10, SystemColors.Control, "Barkod10:", true);
+                UpdateControl(labelDescription11, SystemColors.Control, "Barkod11:", true);
+                UpdateControl(labelDescription12, SystemColors.Control, "Barkod12:", true);
 
-                UpdateControl(label_barkod1, SystemColors.ScrollBar, "Barkod1:", true);
-                UpdateControl(label_barkod2, SystemColors.ScrollBar, "Barkod2:", true);
-                UpdateControl(label_barkod3, SystemColors.ScrollBar, "Barkod3:", true);
-                UpdateControl(label_barkod4, SystemColors.ScrollBar, "Barkod4:", true);
-                UpdateControl(label_barkod5, SystemColors.ScrollBar, "Barkod5:", true);
-                UpdateControl(label_barkod6, SystemColors.ScrollBar, "Barkod6:", true);
-                UpdateControl(label_barkod7, SystemColors.ScrollBar, "Barkod7:", true);
-                UpdateControl(label_barkod8, SystemColors.ScrollBar, "Barkod8:", true);
-                UpdateControl(label_barkod9, SystemColors.ScrollBar, "Barkod9:", true);
-                UpdateControl(label_barkod10, SystemColors.ScrollBar, "Barkod10:", true);
-                UpdateControl(label_barkod11, SystemColors.ScrollBar, "Barkod11:", true);
-                UpdateControl(label_barkod12, SystemColors.ScrollBar, "Barkod12:", true);
+                UpdateControl(labelBarcode1, SystemColors.ScrollBar, "Barkod1:", true);
+                UpdateControl(labelBarcode2, SystemColors.ScrollBar, "Barkod2:", true);
+                UpdateControl(labelBarcode3, SystemColors.ScrollBar, "Barkod3:", true);
+                UpdateControl(labelBarcode4, SystemColors.ScrollBar, "Barkod4:", true);
+                UpdateControl(labelBarcode5, SystemColors.ScrollBar, "Barkod5:", true);
+                UpdateControl(labelBarcode6, SystemColors.ScrollBar, "Barkod6:", true);
+                UpdateControl(labelBarcode7, SystemColors.ScrollBar, "Barkod7:", true);
+                UpdateControl(labelBarcode8, SystemColors.ScrollBar, "Barkod8:", true);
+                UpdateControl(labelBarcode9, SystemColors.ScrollBar, "Barkod9:", true);
+                UpdateControl(labelBarcode10, SystemColors.ScrollBar, "Barkod10:", true);
+                UpdateControl(labelBarcode11, SystemColors.ScrollBar, "Barkod11:", true);
+                UpdateControl(labelBarcode12, SystemColors.ScrollBar, "Barkod12:", true);
 
 
             }
@@ -491,11 +491,13 @@ namespace WindowsFormsApp5
 
             if (((RadioButton)sender).Checked == true)
             {
-                UpdateControl(label_aktualny_produkt, SystemColors.Window, ((RadioButton)sender).Text, true);
+                UpdateControl(labelAktualnyProdukt, SystemColors.Window, ((RadioButton)sender).Text, true);
             }
 
-            if (radioButton_linky.Checked)
+            if (radioButtonLinky.Checked)
             {
+                UpdateControl(labelNapisPodajLot, SystemColors.Window, "Podaj numer LOT baterii:", false);
+                UpdateControl(textBoxLot, SystemColors.Window, "", false);
                 try
                 {
                     modbusClient.WriteSingleRegister(1002, 1);
@@ -519,8 +521,10 @@ namespace WindowsFormsApp5
                 show_controls(4);
 
             }
-            else if (radioButton_smets.Checked)
+            else if (radioButtonSmets.Checked)
             {
+                UpdateControl(labelNapisPodajLot, SystemColors.Window, "Podaj numer LOT baterii:", false);
+                UpdateControl(textBoxLot, SystemColors.Window, "", false);
                 try
                 {
                     modbusClient.WriteSingleRegister(1002, 1);
@@ -544,8 +548,10 @@ namespace WindowsFormsApp5
 
             }
 
-            else if (radioButton_cyble8.Checked)
+            else if (radioButtonCyble8.Checked)
             {
+                UpdateControl(labelNapisPodajLot, SystemColors.Window, "Podaj numer LOT baterii:", true);
+                UpdateControl(textBoxLot, SystemColors.Window, "", true);
                 try
                 {
                     modbusClient.WriteSingleRegister(1002, 2);
@@ -566,8 +572,10 @@ namespace WindowsFormsApp5
                 eq = 2;
                 show_controls(8);
             }
-            else if (radioButton_cyble12.Checked)
+            else if (radioButtonCyble12.Checked)
             {
+                UpdateControl(labelNapisPodajLot, SystemColors.Window, "Podaj numer LOT baterii:", true);
+                UpdateControl(textBoxLot, SystemColors.Window, "", true);
                 try
                 {
                     modbusClient.WriteSingleRegister(1002, 2);
@@ -701,10 +709,16 @@ namespace WindowsFormsApp5
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            if (textBox1.Text.ToUpper().Contains("UTR"))
-                UpdateControl(label_zaslonaUTR, SystemColors.ScrollBar, "", false);
+            if (textBoxUtr.Text.ToUpper().Contains("UTR"))
+                UpdateControl(labelCoverUTR, SystemColors.ScrollBar, "", false);
             else
-                UpdateControl(label_zaslonaUTR, SystemColors.ScrollBar, "", true);
+                UpdateControl(labelCoverUTR, SystemColors.ScrollBar, "", true);
+        }
+
+
+        private void textBox2_TextChanged_1(object sender, EventArgs e)
+        {
+            lotNumber = textBoxLot.Text;
         }
     }
 }

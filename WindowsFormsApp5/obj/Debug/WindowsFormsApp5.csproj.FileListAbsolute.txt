@@ -200,3 +200,25 @@ C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skan
 C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku - dodanie klas\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CopyComplete
 C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku - dodanie klas\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.exe
 C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku - dodanie klas\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku - dodanie klas - Copy\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe.config
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku - dodanie klas - Copy\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku - dodanie klas - Copy\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku - dodanie klas - Copy\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.AssemblyReference.cache
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku - dodanie klas - Copy\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Form1.resources
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku - dodanie klas - Copy\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Properties.Resources.resources
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku - dodanie klas - Copy\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.GenerateResource.cache
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku - dodanie klas - Copy\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CoreCompileInputs.cache
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku - dodanie klas - Copy\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CopyComplete
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku - dodanie klas - Copy\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku - dodanie klas - Copy\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku - dodanie klas - dodanie numeru LOT\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe.config
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku - dodanie klas - dodanie numeru LOT\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku - dodanie klas - dodanie numeru LOT\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.pdb
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku - dodanie klas - dodanie numeru LOT\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.AssemblyReference.cache
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku - dodanie klas - dodanie numeru LOT\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Form1.resources
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku - dodanie klas - dodanie numeru LOT\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Properties.Resources.resources
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku - dodanie klas - dodanie numeru LOT\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.GenerateResource.cache
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku - dodanie klas - dodanie numeru LOT\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CoreCompileInputs.cache
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku - dodanie klas - dodanie numeru LOT\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CopyComplete
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku - dodanie klas - dodanie numeru LOT\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.exe
+C:\Users\2281209\Desktop\programowanie\20s-1\skanery - tcp2 sposob - osobno skanery - obsluga watku - dodanie klas - dodanie numeru LOT\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.pdb

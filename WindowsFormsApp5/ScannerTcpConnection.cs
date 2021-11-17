@@ -10,7 +10,7 @@ using System.Windows.Threading;
 
 namespace WindowsFormsApp5
 {
-    public class ScannerTcpConnection : Control
+    public class ScannerTcpConnection : Control  
     {
         private static string _barcodes_read;
         public string strData1;
@@ -26,7 +26,6 @@ namespace WindowsFormsApp5
         //I'm just adding the .ToString() of the state enum to a richtextbox here
         public void client_ConnectionStatusChanged(EventDrivenTCPClient sender, EventDrivenTCPClient.ConnectionStatus status)
         {
-            connection_status = "Connection: " + status.ToString() + Environment.NewLine;
 
             //Check if this event was fired on a different thread, if it is then we must invoke it on the UI thread
             if (InvokeRequired)
@@ -34,8 +33,9 @@ namespace WindowsFormsApp5
                 Invoke(new EventDrivenTCPClient.delConnectionStatusChanged(client_ConnectionStatusChanged), sender, status);
                 return;
             }
+            connection_status = "Connection: " + status.ToString() + Environment.NewLine;
+            Form1._myWindow.UpdateControl(Form1._myWindow.labelStatus101, SystemColors.Window, connection_status, true);
 
-            //UpdateControl(label_status101, SystemColors.Window, connection_status, true);
 
         }
 
@@ -50,8 +50,8 @@ namespace WindowsFormsApp5
                 return;
             }
             connection_status2 = "Connection: " + status.ToString() + Environment.NewLine;
+            Form1._myWindow.UpdateControl(Form1._myWindow.labelStatus100, SystemColors.Window, connection_status2, true);
 
-            //      UpdateControl(label_status100, SystemColors.Window, connection_status, true);
 
 
         }

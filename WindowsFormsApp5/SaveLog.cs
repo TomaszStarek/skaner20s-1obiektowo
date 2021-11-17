@@ -81,9 +81,18 @@ namespace WindowsFormsApp5
                 sw.WriteLine("[" + start.Year + "-" + start.Month + "-" + start.Day + " " + start.Hour + ":" + start.Minute + ":" + start.Second);
                 sw.WriteLine("]" + stop.Year + "-" + stop.Month + "-" + stop.Day + " " + stop.Hour + ":" + stop.Minute + ":" + stop.Second);
                 sw.WriteLine("TP");
+                if (eqiuip == 1 || eqiuip == 2)
+                {
+                    //if (!(Form1.lotNumber.Length == 10))
+                  //  {
+                        sw.WriteLine("MLOT");
+                        sw.WriteLine("d" + Form1.lotNumber);
+                        sw.WriteLine(">");
+                   // }
+                }
 
 
-            }
+                }
 
 
 

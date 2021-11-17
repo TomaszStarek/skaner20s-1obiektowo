@@ -106,11 +106,8 @@ namespace WindowsFormsApp5
                                         {
                                             Task.Run(() => Form1._myWindow.clear_barkodes());
                                         }
-
-
                                         break;
                                     default:
-
                                         break;
                                 }
                             }
