@@ -22,22 +22,21 @@ namespace WindowsFormsApp5
 
     public partial class Form1 : Form
     {
-
         //modbus do sterownika
         public static ModbusClient modbusClient = new ModbusClient("192.168.100.8", 502);    //Ip-Address and Port of Modbus-TCP-Server
-
 
 
         //do skanerow
         public static EventDrivenTCPClient client;
         public static EventDrivenTCPClient client2;
 
-
         private readonly object x = new object();
 
         public static Form1 _myWindow;
 
         public static string lotNumber;
+
+        public static int eq;
 
         public Form1()
         {
@@ -49,7 +48,6 @@ namespace WindowsFormsApp5
             radioButtonCyble8.Checked = false;
             radioButtonCyble12.Checked = false;
 
-
             //Initialize the event driven client
             client = new EventDrivenTCPClient(IPAddress.Parse("192.168.100.101"), int.Parse("9004"));
             //Initialize the events
@@ -57,8 +55,6 @@ namespace WindowsFormsApp5
             client.DataReceived += new EventDrivenTCPClient.delDataReceived(scanner1.client_DataReceived);
             client.ConnectionStatusChanged += new EventDrivenTCPClient.delConnectionStatusChanged(scanner1.client_ConnectionStatusChanged);
             client.Connect();
-            //UpdateControl(labelBufor101, SystemColors.Window, scanner1.strData1, true);
-
 
             //Initialize the event driven client
             client2 = new EventDrivenTCPClient(IPAddress.Parse("192.168.100.100"), int.Parse("9004"));
@@ -66,10 +62,7 @@ namespace WindowsFormsApp5
             var scanner2 = new ScannerTcpConnection();
             client2.DataReceived += new EventDrivenTCPClient.delDataReceived(scanner2.client_DataReceived2);
             client2.ConnectionStatusChanged += new EventDrivenTCPClient.delConnectionStatusChanged(scanner2.client_ConnectionStatusChanged2);
-            client2.Connect();
-            //UpdateControl(labelBufor100, SystemColors.Window, scanner2.strData2, true);
-            
-
+            client2.Connect();         
 
             try
             {
@@ -86,10 +79,28 @@ namespace WindowsFormsApp5
 
             Application.ApplicationExit += new EventHandler(OnApplicationExit);
 
+            textBox1.KeyDown += textBox2_KeyDown;
+
         }
 
+        private void textBox2_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e)
+        {
+            string buff;
 
-
+            if (e.KeyCode == Keys.Enter)
+            {
+                buff = textBox1.Text.ToUpper();
+                buff = Regex.Replace(buff, @"\s+", string.Empty);
+                if (buff.Length >= 20 && buff.Length <= 27)
+                {
+                    SaveLog.CreateFileLog(buff, eq);
+                    textBox1.Text = "";
+                }
+                else
+                    MessageBox.Show("zla dlugosc znakow!");
+                
+            }
+        }
 
         public bool ControlInvokeRequired(Control c, Action a)
         {
@@ -111,25 +122,18 @@ namespace WindowsFormsApp5
             catch { }
         }
 
-
-
-
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-
         private void button1_Click(object sender, EventArgs e)
         {
-            //          port.Write("LON\r");
+            //port.Write("LON\r");
         }
-
 
         public void clear_barkodes()
         {
-            //  Thread.Sleep(1000);
-
             Thread.Sleep(2500);
 
             this.Invoke(new MethodInvoker(delegate {
@@ -179,20 +183,13 @@ namespace WindowsFormsApp5
                 UpdateControl(labelBarcode11, SystemColors.ScrollBar, "", true);
                 UpdateControl(labelBarcode12, SystemColors.ScrollBar, "", true);
             }
-
-
-
-            }
-
+         }
 
 
         public void show_barkodes(string barkode, int n_barkode)
         {
-
             lock (x)
             {
-               // Thread.Sleep(100);
-
                 if (eq == 4)
                 {
                     switch (n_barkode)
@@ -344,7 +341,6 @@ namespace WindowsFormsApp5
                     }
                 }
             }
-
         }
 
 
@@ -477,18 +473,10 @@ namespace WindowsFormsApp5
 
 
             }
-
-
         }
-
-
-
-
-        public static int eq;
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-
             if (((RadioButton)sender).Checked == true)
             {
                 UpdateControl(labelAktualnyProdukt, SystemColors.Window, ((RadioButton)sender).Text, true);
@@ -547,7 +535,6 @@ namespace WindowsFormsApp5
                 show_controls(6);
 
             }
-
             else if (radioButtonCyble8.Checked)
             {
                 UpdateControl(labelNapisPodajLot, SystemColors.Window, "Podaj numer LOT baterii:", true);
@@ -597,16 +584,10 @@ namespace WindowsFormsApp5
                 eq = 1;
                 show_controls(12);
             }
-
         }
-
-
-
-
 
         public void OnApplicationExit(object sender, EventArgs e)
         {
-
             //try
             //{
             //    modbusClient.WriteSingleRegister(1002, 0);
@@ -618,8 +599,6 @@ namespace WindowsFormsApp5
             //    MessageBox.Show("Nie udało się wysłać do streownika info o trybie", "Błąd");
             //}
 
-
-
             try
             {
                 client.Disconnect();
@@ -630,11 +609,7 @@ namespace WindowsFormsApp5
             {
                 MessageBox.Show("Błąd w zamknięciu portów", "Błąd");
             }
-
         }
-
-
-
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -650,7 +625,6 @@ namespace WindowsFormsApp5
                 modbusClient.WriteSingleRegister(1002, 2);
                 modbusClient.WriteSingleRegister(1003, 2);
             }
-
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -718,7 +692,7 @@ namespace WindowsFormsApp5
 
         private void textBox2_TextChanged_1(object sender, EventArgs e)
         {
-            lotNumber = textBoxLot.Text;
+            lotNumber = textBoxLot.Text.ToUpper();
         }
     }
 }
